@@ -9,4 +9,28 @@
     body{
         font-family: "Archivo", sans-serif;
     }
+
+}
+@layer utilities {
+  .text-primary {
+    color: #FF1F98;
+  }
+  .text-secondary{
+    color: #111827;
+  }
+  .text-accent{
+    color: #28283C;
+  }
+  .bg-gray{
+    background: #EBECED;
+  }
+  .bg-gradient {
+    background: linear-gradient(90deg, #FD2692, #0A67F2);
+    background-size: 200% 100%;
+    background-position: left center;
+  }
+
+  .bg-gradient:hover {
+    background-position: right center;
+  }
 }

@@ -1,14 +1,103 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SureCare | All Your Home Services, One Platform</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SureCare - All Your Home Services, One Platform</title>
+  <link rel="icon" href="./assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+  <header class="p-4 flex flex-row items-center justify-between shadow-sm sticky top-0 z-50 bg-white">
+    <div class="flex flex-row items-center">
+      <img src="./assets/logo.png" alt="Sure Care Logo" class="w-8 h-8" />
+      <a href="/" class="font-bold text-3xl text-primary">
+        Sure<span class="text-secondary">Care</span>
+      </a>
+    </div>
+    <nav class="hidden xl:block">
+      <ul class="flex gap-5 text-base font-medium text-accent">
+
+        <li>
+          <a href="#" class="pb-1 border-b-2 border-transparent
+                transition-colors duration-150 ease-out
+                hover:border-pink-600 hover:text-pink-600">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="pb-1 border-b-2 border-transparent
+                transition-colors duration-150 ease-out
+                hover:border-pink-600 hover:text-pink-600">
+            Services
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="pb-1 border-b-2 border-transparent
+                transition-colors duration-150 ease-out
+                hover:border-pink-600 hover:text-pink-600">
+            Booking
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="pb-1 border-b-2 border-transparent
+                transition-colors duration-150 ease-out
+                hover:border-pink-600 hover:text-pink-600">
+            How It Works
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="pb-1 border-b-2 border-transparent
+                transition-colors duration-150 ease-out
+                hover:border-pink-600 hover:text-pink-600">
+            Blogs
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="pb-1 border-b-2 border-transparent
+                transition-colors duration-150 ease-out
+                hover:border-pink-600 hover:text-pink-600">
+            Pricing Plan
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="pb-1 border-b-2 border-transparent
+                transition-colors duration-150 ease-out
+                hover:border-pink-600 hover:text-pink-600">
+            Contact Us
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="md:flex flex-row gap-4 hidden">
+      <a href="#"
+        class="flex flex-row items-center gap-1 bg-gray py-2 px-4 rounded-sm transition-colors duration-200 ease-out hover:bg-gray-300 active:bg-gray-400">
+        <img src="./assets/padlock.png" alt="Lock Icon" class="w-4 h-4" />
+        <span class="text-md font-medium text-secondary"> Sign In </span>
+      </a>
+      <a href="#"
+        class="flex flex-row bg-gradient py-2 px-4 rounded-sm gap-1 items-center transition-all duration-300 ease-in-out">
+        <img src="./assets/user.png" alt="User icon" class="w-4 h-4 items-center" />
+        <span class="text-md font-medium text-white">Join Us</span>
+      </a>
+    </div>
+    <div class="md:hidden">
+      <button type="button" aria-label="Open navigation menu" aria-expanded="false" class="p-1">
+        <img src="./assets/menu.png" alt="" class="w-10 h-10" aria-hidden="true">
+      </button>
+    </div>
+  </header>
 </body>
+
 </html>
