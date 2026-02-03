@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 
 @layer base {
-    html{
-        scroll-behavior: smooth;
-    }
-    body{
-        font-family: "Archivo", sans-serif;
-    }
-
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Archivo", sans-serif;
+  }
 }
 @layer utilities {
   .text-primary {
-    color: #FF1F98;
+    color: #ff1f98;
   }
-  .text-secondary{
+  .text-secondary {
     color: #111827;
   }
-  .text-accent{
-    color: #28283C;
+  .text-accent {
+    color: #28283c;
   }
-  .bg-gray{
-    background: #EBECED;
+  .bg-gray {
+    background: #ebeced;
   }
   .bg-gradient {
-    background: linear-gradient(90deg, #FD2692, #0A67F2);
+    background: linear-gradient(90deg, #fd2692, #0a67f2);
     background-size: 200% 100%;
     background-position: left center;
   }
@@ -33,4 +32,101 @@
   .bg-gradient:hover {
     background-position: right center;
   }
+  .bg-hero {
+    background-image: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .move-right-to-left {
+    animation: rightToLeft 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes rightToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(30px);
+  }
+  }
+
+  .slow-bounce {
+    animation: slowBounce 3s ease-in-out infinite;
+  }
+
+  @keyframes slowBounce {
+    0% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+
+  /* HERO FLOAT */
+@keyframes heroFloat {
+  0%, 100% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-hero-float {
+  animation: heroFloat 5s ease-in-out infinite;
+}
+
+/* TRUST BADGE */
+@keyframes trustSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-trust-slide-in {
+  animation: trustSlideIn 0.8s ease-out forwards;
+}
+
+/* SOCIAL PROOF */
+@keyframes socialProofSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-social-proof-slide {
+  animation: socialProofSlide 0.8s ease-out forwards;
+}
+
+/* STATS */
+@keyframes statsFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-stats-fade-up {
+  animation: statsFadeUp 0.9s ease-out forwards;
+}
+
 }
