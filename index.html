@@ -89,10 +89,10 @@
       </button>
     </div>
   </header>
-
   <main>
+    <!-- hero Section -->
     <section
-      class="bg-hero w-full px-4 sm:px-6 md:px-10 xl:px-20 md:py-20 flex flex-col-reverse xl:flex-row items-center justify-between gap-12 2xl:px-52">
+      class="bg-hero w-full px-4 sm:px-6 md:px-10 xl:px-20 md:pt-20 flex flex-col-reverse xl:flex-row items-center justify-between gap-12 2xl:px-52">
       <!-- LEFT CONTENT -->
       <div class="w-full xl:w-1/2 flex flex-col gap-10">
         <!-- Heading -->
@@ -151,7 +151,8 @@
         </div>
 
         <!-- Stats -->
-        <div class="flex flex-col md:flex-row gap-6 justify-center items-center md:justify-center xl:justify-start animate-stats-fade-up">
+        <div
+          class="flex flex-col md:flex-row gap-6 justify-center items-center md:justify-center xl:justify-start animate-stats-fade-up">
           <div class="flex flex-col md:flex-row items-center gap-3">
             <img src="./assets/success-01.svg" alt="" />
             <div class="flex flex-col justify-center items-center md:items-start">
@@ -210,6 +211,65 @@
             </span>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- Categories Section -->
+    <section class="px-4 flex flex-col gap-5 lg:gap-10">
+      <div class="pt-10 text-center flex flex-col gap-3">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold text-secondary">
+          Explore our
+          <span class="bg-linear-to-r from-pink-600 to-blue-700 bg-clip-text text-transparent">Categories</span>
+        </h1>
+        <p class="text-sm md:max-w-md text-gray-600 max-w-sm mx-auto">
+          Service categories help organize and structure the offerings on a
+          marketplace, making it easier for users to find what they need.
+        </p>
+      </div>
+      <!-- Catalogues -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-10 max-w-4xl mx-auto">
+        <div
+          class="text-center flex flex-col gap-1 justify-center items-center border border-gray-200 px-14 py-5 rounded-xl hover:border-pink-600 hover:bg-linear-to-b hover:from-purple-50 hover:to-white transition-transform duration-300 ease-in-out hover:scale-105">
+          <img src="./assets/category-01.svg" alt="Catagory1" class="w-9 h-9" />
+          <h1 class="text-sm font-bold text-gray-700">Deliveries</h1>
+          <p class="text-sm font-normal text-gray-500">4547 Listings</p>
+        </div>
+        <div
+          class="text-center flex flex-col gap-1 justify-center items-center border border-gray-200 px-14 py-5 rounded-xl hover:border-pink-600 hover:bg-linear-to-b hover:from-purple-50 hover:to-white transition-transform duration-300 ease-in-out hover:scale-105">
+          <img src="./assets/category-02.svg" alt="Catagory1" class="w-9 h-9" />
+          <h1 class="text-sm font-bold text-gray-700">Electrician</h1>
+          <p class="text-sm font-normal text-gray-500">5212 Listings</p>
+        </div>
+        <div
+          class="text-center flex flex-col gap-1 justify-center items-center border border-gray-200 px-14 py-5 rounded-xl hover:border-pink-600 hover:bg-linear-to-b hover:from-purple-50 hover:to-white transition-transform duration-300 ease-in-out hover:scale-105">
+          <img src="./assets/category-3.svg" alt="Catagory1" class="w-9 h-9" />
+          <h1 class="text-sm font-bold text-gray-700">Plumber</h1>
+          <p class="text-sm font-normal text-gray-500">1235 Listings</p>
+        </div>
+        <div
+          class="text-center flex flex-col gap-1 justify-center items-center border border-gray-200 px-14 py-5 rounded-xl hover:border-pink-600 hover:bg-linear-to-b hover:from-purple-50 hover:to-white transition-transform duration-300 ease-in-out hover:scale-105">
+          <img src="./assets/category-04.svg" alt="Catagory4" class="w-9 h-9" />
+          <h1 class="text-sm font-bold text-gray-700">Computer Services</h1>
+          <p class="text-sm font-normal text-gray-500">7423 Listings</p>
+        </div>
+        <div
+          class="text-center flex flex-col gap-1 justify-center items-center border border-gray-200 px-14 py-5 rounded-xl hover:border-pink-600 hover:bg-linear-to-b hover:from-purple-50 hover:to-white transition-transform duration-300 ease-in-out hover:scale-105">
+          <img src="./assets/category-5.svg" alt="Catagory1" class="w-9 h-9" />
+          <h1 class="text-sm font-bold text-gray-700">Cleaning</h1>
+          <p class="text-sm font-normal text-gray-500">6987 Listings</p>
+        </div>
+        <div
+          class="text-center flex flex-col gap-1 justify-center items-center border border-gray-200 px-14 py-5 rounded-xl hover:border-pink-600 hover:bg-linear-to-b hover:from-purple-50 hover:to-white transition-transform duration-300 ease-in-out hover:scale-105">
+          <img src="./assets/category-06.svg" alt="Catagory1" class="w-9 h-9" />
+          <h1 class="text-sm font-bold text-gray-700">Construction</h1>
+          <p class="text-sm font-normal text-gray-500">8564 Listings</p>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <a href="/"
+          class="flex flext-row justify-center bg-gray-800 items-center gap-2 py-1 px-3 rounded-md hover:bg-gray-900 transition-all duration-200 ease-in-out">
+          <span class="text-white font-semibold">View All</span>
+          <img src="./assets/arrow-icon.png" alt="Arrow Icon" class="" />
+        </a>
       </div>
     </section>
   </main>
